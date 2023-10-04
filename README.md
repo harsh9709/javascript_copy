@@ -140,7 +140,29 @@ Other Style Guides
     if (true) {
       count += 1;
     }
+    var tester = "hey hi";
+    
+    function newFunction() {
+        var hello = "hello";
+    }
+    console.log(hello); //error: hello is not defined
+    console.log(tester)// hey hi
     ```
+  > Hoisting in `var` .
+  
+  
+    console.log(test) //undefined 
+    var test="hey there"
+
+    //above code is interpreted as :
+
+      var test;
+      console.log(test); // test is undefined
+      test = "hey there"
+
+
+  
+
 
   <a name="references--block-scope"></a><a name="2.3"></a>
   - [2.3](#references--block-scope) Note that both `let` and `const` are block-scoped, whereas `var` is function-scoped.
